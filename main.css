@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-heading {
+    color: rgb(38, 96, 184);
+}
+
+/* header */
+@media (max-width: 760px) {
+    header-social-icon {
+        display: none;
+    }
+}
+
+/* Navbar */
+nav {
+    background: #fff!important;
+    box-shadow: 1px 1px #002B5B;
+} 
+
+nav .navbar-brand {
+    color: var(--bs-blue)!important;
+    margin-bottom: 0;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-toggler {
+    outline: none!important;
+    padding: none!important;
+}
+
+/* Carousel */
+.carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-inner .carousel-item::before {
+    content: "";
+    background-color: rgb(12, 11, 10 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-inner .carousel-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+
+.carousel-inner .carousel-caption h2 {
+    color: rgb(25, 66, 128);
+    /* margin-bottom: 8px; */
+    font-size: 50px;
+    font-weight: 900;
+    width:  80%;
+    margin: 0 auto 5px auto;
+    font-family: 'Handlee', cursive;
+
+}
+
+.carousel-inner .carousel-caption p {
+    font-size: 20px;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto 10px auto;
+}
+
+@media(max-width: 770px) {
+    .carousel-inner .carousel-caption h2 {
+        font-size: 40px;
+    }
+}    
+
+@media(max-width: 570px) {
+    .carousel-inner .carousel-caption h2 {
+        font-size: 20px;
+        
+    }
+    .carousel-inner .carousel-caption p {
+        font-size: 12px;
+        
+    }
+}           
+
+/* Levels section  */
+.courses .box {
+    padding: 10px 10px;
+    box-shadow: 0 2px 15px rgb(38, 96, 184);
+}
